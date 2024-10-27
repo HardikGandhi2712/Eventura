@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Eventura - Premier Event Management Services</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+            
+            header {
+                background-color: black;
+                padding: 10px 0;
+                width: 100%;
+            }
+
+            .flex-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 20px;
+            }
+
+            .logo {
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+            }
+
+            .navbar ul {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .navbar li {
+                margin-left: 40px;
+            }
+
+            .navbar li a {
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .navbar li a:hover {
+                color: aqua;
+                border-bottom: red solid 4px;
+            }
+
+            .navbar li a {
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .logo {
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                margin-top: -30px;
+            }
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            body {
+                line-height: 1.6;
+                color: #333;
+                background-color: #f9f9f9;
+                
+            }
+
+
+            h1 {
+                font-size: 3rem;
+                background-color: #333;
+                color: #fff;
+                padding: 20px 0;
+                text-align: center;
+                margin-bottom: 40px;
+                
+            }
+
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 20px;
+                color: #444;
+            }
+
+            p {
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+
+            /* Section Styles */
+            .intro {
+                text-align: center;
+                background-color: #f0f0f0;
+                padding: 40px 20px;
+                margin-bottom: 40px;
+            }
+
+            .intro p {
+                font-size: 1.2rem;
+                max-width: 700px;
+                margin: 0 auto 20px;
+            }
+
+            .intro .btn {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #e74c3c;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+            .intro .btn:hover {
+                background-color: #c0392b;
+            }
+
+            .services {
+                padding: 40px 20px;
+                background-color: #fff;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .service-description {
+                display: flex;
+                align-items: center;
+                margin-bottom: 40px;
+            }
+
+            .service-description p {
+                flex: 1;
+                margin-right: 20px;
+                font-size: 1.1rem;
+            }
+
+            .service-description img {
+                max-width: 300px;
+                border-radius: 10px;
+            }
+
+            .services-list {
+                list-style: none;
+                padding: 0;
+            }
+
+            .services-list li {
+                background-color: #e7e7e7;
+                padding: 15px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+            }
+
+            .services-list li strong {
+                font-weight: bold;
+            }
+
+            /* Footer Styles */
+            footer {
+                background-color: #444;
+                color: #fff;
+                padding: 40px 20px;
+                text-align: center;
+            }
+
+            footer h2 {
+                font-size: 2rem;
+                margin-bottom: 20px;
+                color:white;
+            }
+
+            footer p {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            /* Media Queries */
+            @media (max-width: 768px) {
+                .service-description {
+                    flex-direction: column;
+                }
+
+                .service-description img {
+                    margin-bottom: 20px;
+                    max-width: 100%;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+                <header>
+            <nav class="navbar">
+                <div class="flex-container">
+                    <img src="images/logo1.png" class="logo" align="left">
+                    <ul>
+                        <li><a href="FetchEvents">Home</a></li>
+                        <li><a href="feedback.jsp">Feedback</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="mainServlet">Log Out</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <h1>About Us</h1>
+
+        <section class="intro">
+            <p>
+                At Eventura, we specialize in organizing memorable events that leave a lasting impression. Whether you need 
+                corporate event planning, weddings, concerts, or parties, our experienced team will ensure your event runs smoothly 
+                and exceeds expectations. We handle all aspects from venue booking, decoration, catering, and entertainment.
+            </p>
+            <a href="FetchEvents" class="btn">Book Your Event Now</a>
+        </section>
+
+        <section class="services">
+            <h2>Corporate Events</h2>
+            <div class="service-description">
+                <p>
+                    Eventura excels in organizing corporate events such as conferences, meetings, product launches, and team-building activities. 
+                    We focus on professionalism, quality, and attention to detail to ensure your business event is a success.
+                </p>
+                <img src="images/corporate-event.webp" alt="Corporate event setup" class="service-img">
+            </div>
+
+            <h2>Concerts & Live Performances</h2>
+            <div class="service-description">
+                <p>
+                    Experience the magic of live music with Eventura. We make concert planning effortless, from ticket bookings to stage setups. 
+                    Whether you're looking to attend a concert or host a live performance, our platform ensures everything is organized flawlessly. 
+                    Let us handle the logistics while you enjoy the thrill of live music.
+                </p>
+                <img src="images/concert-event.avif" alt="Exciting live concert setup" class="service-img">
+            </div>
+
+
+            <h3>Other Services</h3>
+            <ul class="services-list">
+                <li><strong>Concerts & Festivals</strong> – Complete event management for large-scale musical and cultural events.</li>
+                <li><strong>Parties & Celebrations</strong> – From birthdays to anniversaries, we organize personalized parties for any occasion.</li>
+                <li><strong>Exhibitions & Trade Shows</strong> – Professional event setup to showcase your business or products.</li>
+                <li><strong>Catering Services</strong> – Delicious menus designed to suit the theme of your event and the preferences of your guests.</li>
+            </ul>
+        </section>
+
+        <footer>
+            <h2>Book Your Event with Us</h2>
+            <p>
+                Ready to host an amazing event? Contact Eventura today to discuss your requirements, and let us handle the rest. We ensure smooth 
+                operations, unique ideas, and the best venues to make your event stand out.
+            </p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+com\mycompany\website\My_Events.class
+com\mycompany\website\resources\JavaEE8Resource.class
+com\mycompany\website\ContactUsServlet.class
+com\mycompany\website\mainServlet.class
+com\mycompany\website\Data.class
+com\mycompany\website\JAXRSConfiguration.class
+com\mycompany\website\event_ticket.class
+com\mycompany\website\FeedbackServlet.class
+com\mycompany\website\DisplayLogin.class
+com\mycompany\website\FetchEvents1.class
+com\mycompany\website\FetchEvents.class

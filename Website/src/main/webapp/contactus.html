@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Us - Eventura</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+            @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+            body {
+                font-family: 'Poppins', sans-serif;
+                background-color: #1f1f1f;
+                color: #fff;  
+            }
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            header {
+                background-color: black;
+                padding:10px;
+                width: 100%;
+            }
+
+            .flex-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 20px;
+            }
+
+            .logo {
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+            }
+
+            .navbar ul {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .navbar li {
+                margin-left: 40px;
+            }
+
+            .navbar li a {
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .navbar li a:hover {
+                color: aqua;
+                border-bottom: red solid 4px;
+            }
+
+            .navbar li a {
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .logo {
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                margin-top: -30px;
+            }
+
+            .contact-us {
+                padding: 40px 20px;
+                background-color: #333;
+                max-width: 700px;
+                margin-top:20px;
+                margin-left:530px;
+                border-radius: 10px;
+                color:white;
+            }
+
+            h2 {
+                text-align: center;
+                color:white;
+                margin-bottom: 30px;
+            }
+
+            .form-group {
+                margin-bottom: 20px;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+                color: white; 
+                font-weight: bold;
+            }
+           
+            input[type="text"],
+            input[type="number"],
+            input[type="date"],
+            input[type="email"],
+            input[type="tel"],
+            select,
+            textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #bdc3c7;
+                border-radius: 5px;
+                font-size: 16px;
+                color:#757568;
+                outline: none;
+                background-color:#333;
+            }
+
+            button {
+                background-color: #00bfff;
+                color: #fff;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+                font-size: 18px;
+                cursor: pointer;
+                width: 100%;
+                transition: background-color 0.3s, transform 0.2s; 
+            }
+
+            button:hover {
+                background-color: #0077b6;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <nav class="navbar">
+                <div class="flex-container">
+                    <img src="images/logo1.png" class="logo" align="left">
+                    <ul>
+                        <li><a href="FetchEvents">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="feedback.jsp">Feedback</a></li>
+                        <li><a href="mainServlet">Log Out</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <section class="contact-us">
+            <h2>Contact Us to Host Your Event</h2>
+            <form action="ContactUsServlet" method="post" class="contact-form">
+               
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventName">Event Name:</label>
+                    <input type="text" id="eventName" name="eventName" placeholder="Enter the event name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventType">Event Type:</label>
+                    <select id="eventType" name="eventType" required>
+                        <option value="" disabled selected>Select event type</option>
+                        <option value="concert">Concert</option>
+                        <option value="corporate">Corporate Event</option>
+                        <option value="wedding">Wedding</option>
+                        <option value="party">Party</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventDate">Event Date:</label>
+                    <input type="date" id="eventDate" name="eventDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventLocation">Event Location:</label>
+                    <input type="text" id="eventLocation" name="eventLocation" placeholder="Enter the location" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventDescription">Event Description:</label>
+                    <textarea id="eventDescription" name="eventDescription" rows="4" placeholder="Describe your event" required></textarea>
+                </div>
+
+            
+                <div class="form-group">
+                    <button type="submit" class="btn-submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
